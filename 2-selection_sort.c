@@ -13,6 +13,9 @@ void selection_sort(int *array, size_t size)
 	size_t i, j, min;	/* to store array indices */
 	int temp;			/* to store array data */
 
+	if (array == NULL || size <= 0)
+		return;
+
 	/* loop through the entire array */
 	for (i = 0; i < size - 1; i++)
 	{

@@ -39,10 +39,10 @@ void selection_sort(int *array, size_t size)
 			temp = array[min];
 			array[min] = array[i];
 			array[i] = temp;
-		}
 
-		/* Print the array after each swap */
-		print_array(array, size);
+			/* Print the array ONLY if swap is made */
+			print_array(array, size);
+		}
 	}
 
 }

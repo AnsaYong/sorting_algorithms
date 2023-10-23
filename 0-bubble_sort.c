@@ -10,6 +10,9 @@ void bubble_sort(int *array, size_t size)
 {
 	size_t temp, swapped, pass_throughs, j;
 
+	if (array == NULL || size < 2)
+		return;
+
 	/* Outter loop to pass through each item in the array */
 	for (pass_throughs = 0; pass_throughs < size - 1; pass_throughs++)
 	{
@@ -29,11 +32,8 @@ void bubble_sort(int *array, size_t size)
 				swapped = 1; /* Set swap status to 1 meaning a swap occured */
 				print_array(array, size);
 			}
-
 		}
 		if (swapped == 0)
 			break;
 	}
-
-
 }

@@ -10,7 +10,7 @@ void cocktail_sort_list(listint_t **list)
 	int direction = FORWARD;
 	listint_t *start = NULL, *end = NULL, *current = *list;
 
-	if (list == NULL || (*list) == NULL || (*list)->next == NULL)
+	if (!list || !(*list) || !(*list)->next)
 		return;
 	start = current;
 	end = get_end_node(*list);

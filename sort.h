@@ -2,6 +2,10 @@
 #define SORT_H
 
 #include <stdlib.h>
+#include <stdio.h>
+
+#define FORWARD 1
+#define BACKWARD -1
 
 /**
  * struct listint_s - Doubly linked list node
@@ -28,7 +32,14 @@ void quick_sort_recursive(int *array, int low, int high);
 void swap(int *a, int *b);
 int partition(int *array, int low, int high);
 void cocktail_sort_list(listint_t **list);
+listint_t *get_end_node(listint_t *h);
+void _swap(listint_t **list, listint_t *node);
 void counting_sort(int *array, size_t size);
+void merge_subarr(int *arr, size_t left_idx, size_t mid_idx, size_t right_idx);
+void merge_sort(int *array, size_t size);
+void _sort(int *array, size_t start_idx, size_t end_idx);
+void merge(int *arr, size_t left_idx, size_t mid_idx, size_t right_idx);
+void printArray(int *arr, size_t left_idx, size_t right_idx);
 void shell_sort(int *array, size_t size);
 
 #endif	/* SORT_H */

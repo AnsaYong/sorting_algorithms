@@ -50,7 +50,10 @@ void cocktail_sort_list(listint_t **list)
 /**
  * get_end_node - gets the address of the last node
  * in the doubly linked list to be sorted.
- * @head: The doubly linked lis to be sorted
+ * @h: The doubly linked lis to be sorted
+ *
+ * Return: Pointer to the last node of the
+ * doubly linked list
  */
 listint_t *get_end_node(listint_t *h)
 {

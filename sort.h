@@ -35,5 +35,8 @@ void cocktail_sort_list(listint_t **list);
 listint_t *get_end_node(listint_t *h);
 void _swap(listint_t **list, listint_t *node);
 void counting_sort(int *array, size_t size);
+void merge_subarr(int *arr, size_t left_idx, size_t mid_idx, size_t right_idx);
+void merge_sort(int *array, size_t size);
+void _sort(int *array, size_t start_idx, size_t end_idx);
 
 #endif	/* SORT_H */
